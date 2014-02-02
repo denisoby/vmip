@@ -3,7 +3,7 @@ var exec = require('child_process').exec;
 function getVmIps(err, stdout, stderr, vmName) {
     var ipFlag = "IP, value: ";
     var ipPattern = "[\\d\\.]*";
-    var regexp = new RegExp(ipFlag + ipPattern);
+    var regexp = new RegExp(ipFlag + ipPattern, "g");
     var ips = stdout.match(regexp);
 
     if (ips) {
