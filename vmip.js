@@ -1,3 +1,5 @@
+#!/usr/bin/env nodejs
+
 /**
  * @author denis.obydennykh@gmail.com
  */
